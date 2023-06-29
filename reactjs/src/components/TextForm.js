@@ -13,6 +13,15 @@ export default function TextForm(props) {
     }
 
     
+    const handle=()=>{
+      console.log("clear" );
+     // let newText=text.toReverse();
+     let newText=text.split('').reverse().join('');
+      setText(newText);
+  }
+
+
+
     const handleLowClick=()=>{
       console.log("uppercase" );
       let newText=text.toLowerCase();
@@ -39,6 +48,11 @@ export default function TextForm(props) {
 
   
   <button className="btn btn-dark mx-3" onClick={handleLowClick}>Lowercase</button>
+  
+
+    <button className="btn btn-dark mx-3" onClick={handle}>Reverse</button>
+
+
 
 </div>
 
