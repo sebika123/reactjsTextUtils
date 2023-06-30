@@ -10,6 +10,7 @@ export default function TextForm(props) {
         console.log("uppercase" );
         let newText=text.toUpperCase();
         setText(newText);
+        props.showAlert("uppercase converted","success")
     }
 
     
@@ -18,6 +19,7 @@ export default function TextForm(props) {
      // let newText=text.toReverse();
      let newText=text.split('').reverse().join('');
       setText(newText);
+      props.showAlert("lowercase converted","success")
   }
 
 
@@ -26,6 +28,7 @@ export default function TextForm(props) {
       console.log("uppercase" );
       let newText=text.toLowerCase();
       setText(newText);
+      props.showAlert("reverse converted","success")
   }
   
 
