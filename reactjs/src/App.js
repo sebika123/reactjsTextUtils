@@ -54,7 +54,7 @@ const toggleMode=()=>{
 <TextForm  showAlert={showAlert} heading="enter your text here"/>
 </div>
 <div className="container">
-  <About alert="welcome"/>
+  <About alert="welcome!!"/>
 </div>
   </>
   );
